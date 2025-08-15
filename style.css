@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(240, 217, 90);
+  width: 100vw;
+  height: 50vh;
+}
+
+/* nav related styles */
+.nav-bar {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.ugvimage {
+  width: 500px;
+  margin-left: 40px;
+}
+
+.nab-bar-list ul {
+  display: flex;
+  gap: 30px;
+}
+
+ul>li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #000;
+  margin-right: 50px;
+}
+
+ul>li {
+  list-style: none;
+  margin-right: 20px;
+}
+
+.nab-bar-list ul input {
+  margin-right: 30px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+}
+
+.nab-bar-list ul li :hover {
+  /* background-color: rgb(193, 219, 25); */
+  border-radius: 5px;
+  border-bottom: 1px solid rgb(126, 121, 121);
+  color: rgb(95, 95, 230);
+}
+
+.sub-menu-1 {
+  display: none;
+}
+
+.nab-bar-list ul li:hover .sub-menu-1 {
+  display: block;
+  position: absolute;
+  width: 125px;
+  background-color: rgb(193, 219, 25);
+}
+
+.nab-bar-list ul li:hover .sub-menu-1 ul {
+  display: block;
+  margin: 10px;
+}
+
+.nab-bar-list ul li:hover .sub-menu-1 ul li {
+  width: 100px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background-color: transparent;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.nab-bar-list ul li:hover .sub-menu-1 ul li:last-child {
+  border-bottom: none;
+}
+
+.nab-bar-list ul li:hover .sub-menu-1 ul li a:hover {
+  color: #fff;
+}
+
+/* shared styles */
+.nav-bar,
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* header content styles */
+.header-content {
+  margin: 0 100px;
+  margin-top: 80px;
+}
+
+.cselogo {
+  width: 200px;
+}
+
+.header-description>p {
+  font-size: 50px;
+  font-weight: 600;
+  width: 900px;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+/* sidebar styles */
+
+.sidebar .nav-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 400px;
+  z-index: 999;
+  background-color: rgb(238, 241, 231);
+  backdrop-filter: blue(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.sidebar .nav-bar ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.sidebar .nav-bar .ugvimage {
+  width: 250px;
+  margin-right: 20px;
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+.sidebar a {
+  width: 100%;
+}
+
+.menu-bar {
+  display: none;
+}
+
+/* header responsive */
+
+@media screen and (max-width:800px) {
+
+  .header-content .cselogo {
+    width: 150px;
+    margin-left: -50px;
+  }
+
+  .header-description>p {
+    font-size: 20px;
+    font-weight: 200;
+    width: 300px;
+
+  }
+
+  .hideOnMobile {
+    display: none;
+  }
+
+  .menu-bar {
+    display: block;
+  }
+
+  .nab-bar-list ul li:hover .sub-menu-1 {
+    display: inline;
+    position: absolute;
+    width: 125px;
+    background-color: rgb(193, 219, 25);
+  }
+
+  @media screen and (max-width:400px) {
+    .header-content .cselogo {
+      width: 100px;
+      margin-left: -50px;
+    }
+
+    .header-description>p {
+      font-size: 15px;
+      font-weight: 100;
+      width: 200px;
+
+    }
+
+    .hideOnMobile {
+      display: none;
+    }
+
+    .menu-bar {
+      display: block;
+    }
+  }
