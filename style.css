@@ -180,7 +180,7 @@ ul>li {
     background-color: rgb(193, 219, 25);
   }
 
-  @media screen and (max-width:400px) {
+  @media screen and (max-width:300px) {
     .header-content .cselogo {
       width: 100px;
       margin-left: -50px;
