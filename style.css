@@ -180,16 +180,24 @@ ul>li {
     background-color: rgb(193, 219, 25);
   }
 
-  @media screen and (max-width:300px) {
+  @media screen and (max-width:600px) {
+
+      .nab-bar-list ul li:hover .sub-menu-1 {
+          display: inline;
+          position: absolute;
+          width: 80px;
+          background-color: rgb(193, 219, 25);
+        }
+
     .header-content .cselogo {
-      width: 100px;
+      width: 150px;
       margin-left: -50px;
     }
 
     .header-description>p {
       font-size: 15px;
       font-weight: 100;
-      width: 200px;
+      width: 300px;
 
     }
 
