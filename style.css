@@ -149,9 +149,132 @@ ul>li {
   display: none;
 }
 
-/* header responsive */
+/* main section part 1 */
 
-@media screen and (max-width:950px) {
+.list ul {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.list ul li {
+  background-color: gold;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.list ul button {
+  font-size: 20px;
+  padding: 5px 30px;
+  background-color: #fff;
+
+}
+
+.animation-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 300px;
+  margin: 50px 180px;
+}
+
+.list .btn:hover {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #4fc2e6;
+  color: #fff;
+}
+
+.slider {
+  position: relative;
+  width: 400px;
+  height: 330px;
+  border: 1px solid black;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #131111;
+}
+
+.images {
+  display: flex;
+}
+
+.images img {
+  width: 500px;
+  height: 300px;
+  transition: all 0.15s ease;
+}
+
+.images input {
+  display: none;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+.dots label {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  margin: 2px;
+}
+
+.dots label:hover {
+  background: #fff;
+}
+
+#img1:checked~.m1 {
+  margin-left: 0;
+}
+
+#img2:checked~.m2 {
+  margin-left: -100%;
+}
+
+#img3:checked~.m3 {
+  margin-left: -213%;
+}
+
+#img4:checked~.m4 {
+  margin-left: -330%;
+}
+
+#img5:checked~.m5 {
+  margin-left: -450%;
+}
+
+#im4 {
+  width: 435px;
+}
+
+.about-us-description {
+  width: 550px;
+  height: 350px;
+  border: 1px solid rgb(231, 227, 227);
+  padding: 30px;
+  border-radius: 8px;
+  border-bottom: 1px;
+  border-right: 1px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+span {
+  font-size: 70px;
+  font-weight: 800;
+  color: red;
+}
+
+/* header responsive */
+@media screen and (min-width:951px) and (max-width:1199px) {
 
   .header-content .cselogo {
     width: 150px;
@@ -180,32 +303,285 @@ ul>li {
     background-color: rgb(193, 219, 25);
   }
 
-  @media screen and (max-width:600px) {
-
-      .nab-bar-list ul li:hover .sub-menu-1 {
-          display: inline;
-          position: absolute;
-          width: 80px;
-          background-color: rgb(193, 219, 25);
-        }
-
-    .header-content .cselogo {
-      width: 150px;
-      margin-left: -50px;
-    }
-
-    .header-description>p {
-      font-size: 15px;
-      font-weight: 100;
-      width: 300px;
-
-    }
-
-    .hideOnMobile {
-      display: none;
-    }
-
-    .menu-bar {
-      display: block;
-    }
+  .list ul {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
   }
+
+  .list .btn:hover {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4fc2e6;
+    color: #fff;
+  }
+
+  .animation-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-us-description {
+    width: 400px;
+    height: 420px;
+    border: 1px solid rgb(231, 227, 227);
+    padding: 30px;
+    border-radius: 8px;
+    border-bottom: 1px;
+    border-right: 1px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  span {
+    font-size: 50px;
+    font-weight: 800;
+    color: red;
+  }
+}
+
+@media screen and (min-width:601px) and (max-width:950px) {
+
+  .header-content .cselogo {
+    width: 150px;
+    margin-left: -50px;
+  }
+
+  .header-description>p {
+    font-size: 20px;
+    font-weight: 200;
+    width: 300px;
+
+  }
+
+  .hideOnMobile {
+    display: none;
+  }
+
+  .menu-bar {
+    display: block;
+  }
+
+  .nab-bar-list ul li:hover .sub-menu-1 {
+    display: inline;
+    position: absolute;
+    width: 125px;
+    background-color: rgb(193, 219, 25);
+  }
+
+  .list ul {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  .list .btn:hover {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #d143e4;
+    color: #fff;
+  }
+
+  .animation-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-us-description {
+    width: 400px;
+    height: 420px;
+    border: 1px solid rgb(231, 227, 227);
+    padding: 30px;
+    border-radius: 8px;
+    border-bottom: 1px;
+    border-right: 1px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  span {
+    font-size: 50px;
+    font-weight: 800;
+    color: red;
+  }
+}
+
+@media screen and (min-width:361px) and (max-width:600px) {
+
+  .nab-bar-list ul li:hover .sub-menu-1 {
+    display: inline;
+    position: absolute;
+    width: 80px;
+    background-color: rgb(193, 219, 25);
+  }
+
+  .header-content .cselogo {
+    width: 150px;
+    margin-left: -50px;
+  }
+
+  .header-description>p {
+    font-size: 15px;
+    font-weight: 100;
+    width: 300px;
+
+  }
+
+  .hideOnMobile {
+    display: none;
+  }
+
+  .menu-bar {
+    display: block;
+  }
+
+  .list ul {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  .list .btn:hover {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4fc2e6;
+    color: #d3f126;
+  }
+
+  .animation-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-us-description {
+    margin-top: -230px;
+    width: 350px;
+    height: 450px;
+    border: 1px solid rgb(231, 227, 227);
+    padding: 30px;
+    border-radius: 8px;
+    border-bottom: 1px;
+    border-right: 1px;
+    box-shadow: 5px 5px 5px rgba(179, 30, 30, 0.3);
+  }
+
+  span {
+    font-size: 50px;
+    font-weight: 800;
+    color: red;
+  }
+}
+
+@media screen and (max-width:360px) {
+  .header-content .cselogo {
+    width: 100px;
+    margin-left: -95px;
+  }
+
+  .header-description>p {
+    font-size: 15px;
+    font-weight: 100;
+    width: 120px;
+    margin-right: 20px;
+  }
+
+  .hideOnMobile {
+    display: none;
+  }
+
+  .menu-bar {
+    display: block;
+  }
+
+  .nab-bar-list ul li:hover .sub-menu-1 {
+    display: inline;
+    position: absolute;
+    width: 10px;
+    background-color: rgb(193, 219, 25);
+  }
+
+  .list ul {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  .list .btn:hover {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4fc2e6;
+    color: #fff;
+  }
+
+  .animation-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-us-description {
+    width: 280px;
+    height: 600px;
+    margin-top: -150px;
+    border: 1px solid rgb(231, 227, 227);
+    padding: 20px;
+    border-radius: 8px;
+    border-bottom: 1px;
+    border-right: 1px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    margin-right: 10px;
+  }
+
+  span {
+    font-size: 50px;
+    font-weight: 800;
+    color: red;
+  }
+
+  .sidebar .nav-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 252px;
+    z-index: 999;
+    background-color: rgb(188, 221, 111);
+    backdrop-filter: blue(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .ugvimage {
+    width: 100px;
+    margin-left: 25px;
+  }
+
+  header {
+    background-color: rgb(240, 150, 90);
+    width: 359px;
+    height: 50vh;
+  }
+
+  .slider {
+    position: relative;
+    width: 300px;
+    height: 330px;
+    border: 1px solid black;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #131111;
+  }
+
+
+}
